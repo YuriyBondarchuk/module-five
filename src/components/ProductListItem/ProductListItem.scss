@@ -1,0 +1,40 @@
+.product-item {
+
+    &-card {
+        position: relative;
+        padding-bottom: 400px;
+        overflow: hidden;
+        cursor: pointer;
+        &:hover {
+            .product-item-pic {
+                img {
+                    transform: scale(1.3);
+                }
+            }
+        }
+    }
+
+    &-pic {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        height: 50%;
+        img {
+            transition: .3s ease-in-out;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &-title {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
